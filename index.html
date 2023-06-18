@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="playerContainer">
+      <div class="imgContainer">
+        <img
+          src="https://images.unsplash.com/photo-1619983081593-e2ba5b543168?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+          alt="Music"
+        />
+      </div>
+      <div class="music">
+        <h2 id="title">Music</h2>
+        <h3 id="artist">Shahi Shiv</h3>
+        <audio src="Jai Shree Ram.mp3"></audio>
+      </div>
+
+      <!-- Progress -->
+      <div id="progressContainer" class="progressContainer">
+        <div id="progress" class="progress"></div>
+        <div class="durationWrapper">
+          <span id="currentTime">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+      <!-- Controlse -->
+      <div class="playerControle">
+        <i
+          style="font-size: 30px"
+          class="fa fa-backward"
+          id="prev"
+          title="Previous"
+        ></i>
+        <i
+          style="font-size: 30px"
+          class="fa fa-play main-button"
+          id="play"
+          title="Play"
+        ></i>
+        <i
+          style="font-size: 30px"
+          class="fa fa-forward"
+          id="next"
+          title="Next"
+        ></i>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
